@@ -5,6 +5,8 @@ VisualStudioVersion = 18.11.12402.416
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI.csproj", "{97011598-596C-4B94-9329-0DDB5272FD52}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "react-crud-app", "..\react-crud-app\react-crud-app.esproj", "{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{97011598-596C-4B94-9329-0DDB5272FD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97011598-596C-4B94-9329-0DDB5272FD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97011598-596C-4B94-9329-0DDB5272FD52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
