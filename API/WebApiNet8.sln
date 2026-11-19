@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI.csproj", "{97011598-596C-4B94-9329-0DDB5272FD52}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "react-crud-app", "..\react-crud-app\react-crud-app.esproj", "{4DFA01BC-7EB0-4468-016C-DFCA1DA5A2A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{97011598-596C-4B94-9329-0DDB5272FD52} = {97011598-596C-4B94-9329-0DDB5272FD52}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

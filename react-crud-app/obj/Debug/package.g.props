@@ -17,6 +17,7 @@
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">react-scripts build</PackageJsonScriptsBuild>
     <PackageJsonScriptsTest Condition="$(PackageJsonScriptsTest) == ''">react-scripts test</PackageJsonScriptsTest>
     <PackageJsonScriptsEject Condition="$(PackageJsonScriptsEject) == ''">react-scripts eject</PackageJsonScriptsEject>
+    <PackageJsonScriptsDev Condition="$(PackageJsonScriptsDev) == ''">react-scripts start</PackageJsonScriptsDev>
     <PackageJsonEslintconfigExtends Condition="$(PackageJsonEslintconfigExtends) == ''">react-app</PackageJsonEslintconfigExtends>
     <PackageJsonBrowserslistProduction Condition="$(PackageJsonBrowserslistProduction) == ''">[
   "\u003E0.2%",
