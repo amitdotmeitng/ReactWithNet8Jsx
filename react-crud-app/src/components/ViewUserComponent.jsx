@@ -12,7 +12,8 @@ class ViewUserComponent extends Component {
     }
 
     componentDidMount(){
-        UserService.getUserById(this.state.id).then( res => {
+        UserService.getUserById(this.state.id).then(res => {
+            debugger;
             this.setState({user: res.data});
         })
     }
@@ -26,23 +27,23 @@ class ViewUserComponent extends Component {
                     <div className = "card-body">
                         <div className = "row">
                             <label> User First Name: </label>
-                            <div> { this.state.users.name }</div>
+                            <div> { this.state.user.name }</div>
                         </div>
                         <div className = "row">
                             <label> Age: </label>
-                            <div> { this.state.user.Age }</div>
+                            <div> { this.state.user.age }</div>
                         </div>
                         <div className = "row">
                             <label> City: </label>
-                            <div> { this.state.user.City }</div>
+                            <div> { this.state.user.city }</div>
                         </div>
 						 <div className = "row">
                             <label> State: </label>
-                            <div> { this.state.user.State }</div>
+                            <div> { this.state.user.state }</div>
                         </div>
 						 <div className = "row">
                             <label> Pincode: </label>
-                            <div> { this.state.user.Pincode }</div>
+                            <div> { this.state.user.pincode }</div>
                         </div>
                     </div>
 

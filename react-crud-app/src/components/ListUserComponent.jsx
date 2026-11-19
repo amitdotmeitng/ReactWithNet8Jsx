@@ -26,7 +26,8 @@ class ListUserComponent extends Component {
     }
 
   componentDidMount(){
-        UserService.getUsers().then((res) => {
+      UserService.getUsers().then((res) => {
+          debugger;
             if(res.data==null)
             {
                 this.props.history.push('/add-user/_add');
@@ -55,21 +56,22 @@ class ListUserComponent extends Component {
                                     <th> Name</th>
                                     <th> Age</th>
                                     <th>City</th>
-									  <th>State</th>
-									    <th>Pincode</th>
+									<th>State</th>
+									<th>Pincode</th>
                                     <th> Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {
+
                                     this.state.users.map(
                                         user => 
                                         <tr key = {user.id}>
-                                             <td> { user.Name} </td>   
-                                             <td> {user.Age}</td>
-                                             <td> {user.City}</td>
-											 <td> {user.State}</td>
-											 <td> {user.Pincode}</td>
+                                             <td> {user.name} </td>   
+                                             <td> {user.age}</td>
+                                             <td> {user.city}</td>
+											 <td> {user.state}</td>
+											 <td> {user.pincode}</td>
                                              <td>
                                                  <button onClick={ () => this.editUser(user.id)} className="btn btn-info">Update </button>
                                                  <button style={{marginLeft: "10px"}} onClick={ () => this.deleteUser(user.id)} className="btn btn-danger">Delete </button>

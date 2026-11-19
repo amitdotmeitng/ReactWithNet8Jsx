@@ -9,8 +9,8 @@
       },
       {
         "Path": "WebAPI.csproj",
-        "Action": "Start",
-        "DebugTarget": "http"
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "https"
       }
     ]
   }
